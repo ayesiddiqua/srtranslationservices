@@ -5,6 +5,85 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Book Online | S.R.Translation services</title>
+        <link rel="stylesheet" href="./styles/main.css" />
     </head>
-    <body></body>
+    <body>
+        <header
+            class="
+                bg-darkGreen
+                text-white
+                flex flex-col
+                items-center
+                p-8
+                sm:flex-row sm:justify-between
+            "
+        >
+            <div class="text-xl font-bold uppercase">
+                S.R.Translation services
+            </div>
+            <nav>
+                <ul class="flex mt-6 md:mt-0">
+                    <li class="mr-8"><a href="./index.html">Home</a></li>
+                    <li class="mr-8"><a href="./book.html">Book Online</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="services">
+                <h2 class="text-center my-16 text-4xl">Our Services</h2>
+                <div
+                    class="
+                        container
+                        flex flex-col
+                        xs:flex-row
+                        space-y-8 space-x-0
+                        xs:space-y-0 xs:space-x-8
+                    "
+                >
+                    <div class="border-2">
+                        <div>
+                            <img
+                                src="https://static.wixstatic.com/media/e16b861b852b4d2183fd87ef4f760901.jpg/v1/fill/w_360,h_360,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/e16b861b852b4d2183fd87ef4f760901.webp"
+                                alt="man img"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h2 class="py-4 text-2xl">Mock Interview</h2>
+                            <hr />
+                            <div class="flex flex-col py-3">
+                                <span>1 hr</span>
+                                <span>$19.99</span>
+                                <button
+                                    class="my-2 py-2 text-white bg-lightGreen"
+                                >
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-2">
+                        <div>
+                            <img
+                                src="https://static.wixstatic.com/media/a2ee6b89562618720f7c6f7fbb6afd66.jpg/v1/fill/w_360,h_360,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/a2ee6b89562618720f7c6f7fbb6afd66.webp"
+                                alt="interview Image"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h2 class="py-4 text-2xl">Resume Writing</h2>
+                            <hr />
+                            <div class="flex flex-col py-3">
+                                <span>1 hr</span>
+                                <span>$19.99</span>
+                                <button
+                                    class="my-2 py-2 text-white bg-lightGreen"
+                                >
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
