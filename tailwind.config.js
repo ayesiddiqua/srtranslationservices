@@ -10,6 +10,7 @@ module.exports = {
                 darkGreen: "var(--dark-green)",
                 lightGreen: "var(--light-green)",
                 green: "var(--green)",
+                lightPink: "var(--light-pink)",
             },
         },
     },

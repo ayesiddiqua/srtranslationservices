@@ -423,6 +423,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+*, ::before, ::after {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -461,9 +466,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mt-6 {
@@ -476,6 +490,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .inline-block {
@@ -494,8 +512,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .bg-darkGreen {
@@ -515,8 +543,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: var(--green);
 }
 
+.bg-lightPink {
+  background-color: var(--light-pink);
+}
+
 .p-8 {
   padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-12 {
@@ -544,12 +580,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
 
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-xl {
@@ -584,10 +634,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: var(--light-green);
 }
 
+.text-darkGreen {
+  color: var(--dark-green);
+}
+
 :root {
   --dark-green: #0d2123;
   --light-green: #264346;
   --green: #123033;
+  --light-pink: #f8cfa9;
 }
 
 * {
